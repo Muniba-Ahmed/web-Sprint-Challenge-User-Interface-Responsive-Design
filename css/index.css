@@ -183,6 +183,11 @@ nav {
   width: 70%;
   padding: 2%;
 }
+.links a {
+  color: black;
+  text-decoration: none;
+}
+
 .background img {
   width: 100%;
   display: block;
@@ -200,11 +205,13 @@ nav {
 }
 
 .top-content .text-container {
-  width: 35%;
-  /* padding: 0 1%; */
+  width: 48%;
+  padding: 0 1%;
   padding-bottom: 4%;
 }
-
+.text-container > h2 {
+  text-align: center;
+}
 /*Middle Section Styles*/
 .middle-content {
   margin-bottom: 4%;
@@ -295,7 +302,7 @@ nav {
 }
 
 .bottom-content .text-container {
-  width: 25%;
+  width: 28%;
 }
 
 .bottom-content .text-container:last-child {
@@ -307,7 +314,10 @@ footer {
   width: 100%;
   background-color: #ff4b00;
 }
-
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
 /*About Page Styles*/
 
 .boxsection {
