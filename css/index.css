@@ -331,7 +331,7 @@ footer nav a {
 .boxsection {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .linkz {
   display: flex;
@@ -364,9 +364,9 @@ footer nav a {
   width: 400px;
 }
 
-/* .boxsection .box-element p {
-  margin-right: 22%;
-} */
+.boxsection .box-element p {
+  padding-bottom: 5%;
+}
 
 /*Responsive Styles*/
 @media (max-width: 500px) {
