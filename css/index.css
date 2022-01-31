@@ -238,12 +238,14 @@ nav {
   color: white;
   display: flex;
   flex-wrap: wrap;
+
   /* justify-content: space-between; */
   /* text-align: center; */
 }
 
 .box1 {
   background: teal;
+  padding-left: 0%;
 }
 .box2 {
   background: gold;
@@ -274,6 +276,11 @@ nav {
   background: dodgerblue;
 }
 
+.box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
 /* .coloredboxes {
   color: white;
   display:flex;
@@ -348,6 +355,10 @@ footer nav a {
   text-align: justify;
   width: 50%;
   height: 80%;
+}
+
+.boxsection .box-element p {
+  margin-right: 10%;
 }
 
 /*Responsive Styles*/
