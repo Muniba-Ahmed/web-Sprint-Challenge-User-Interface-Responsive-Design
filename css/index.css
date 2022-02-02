@@ -332,6 +332,7 @@ footer nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* width: 1200px; */
 }
 .linkz {
   display: flex;
@@ -361,7 +362,7 @@ footer nav a {
   height: 80%;
   display: flex;
   flex-direction: column;
-  width: 428px;
+  width: 360px;
 }
 
 .boxsection .box-element p {
