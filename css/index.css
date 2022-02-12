@@ -130,8 +130,8 @@ table {
 
 * {
   box-sizing: border-box;
-  /* max-width:100% */
-  border: 1px solid gray;
+  max-width: 100%;
+  /* border: 1px solid gray; */
   padding: 10%;
 }
 
@@ -142,8 +142,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-size: 1.6rem;
-  margin: 5% 14%
-  
+  margin: 5% 14%;
 }
 
 h1,
@@ -160,7 +159,7 @@ footer {
   padding: 4% 0;
 }
 .container {
-  width: 80%;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -172,24 +171,25 @@ nav {
   /* margin: 2% 10%; */
 }
 #logo {
-  width: 60%;
+  width: 25%;
 }
 
-#logo img {
-  width: 60%;
-}
 .links {
   display: flex;
   justify-content: space-between;
   width: 70%;
   padding: 2%;
 }
+.links a {
+  color: black;
+  text-decoration: none;
+}
+
 .background img {
   width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .top-content {
@@ -202,11 +202,13 @@ nav {
 }
 
 .top-content .text-container {
-  width: 35%;
+  width: 48%;
   padding: 0 1%;
   padding-bottom: 4%;
 }
-
+.text-container > h2 {
+  text-align: center;
+}
 /*Middle Section Styles*/
 .middle-content {
   margin-bottom: 4%;
@@ -219,33 +221,43 @@ nav {
 .middle-content .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.middle-content .boxes .box {
+  /* background: black; */
+  margin: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+}
+
+.boxes {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* justify-content: space-between; */
+  /* text-align: center; */
 }
 
 .box1 {
   background: teal;
-  padding: 5px 10px 5px 10px;
-  
+  padding-left: 0%;
 }
 .box2 {
   background: gold;
-  padding: 5px 10px 5px 10px;
- 
 }
 .box3 {
   background: cadetblue;
-  padding: 5px 10px 5px 10px;
- 
 }
 .box4 {
   background: coral;
-  padding: 5px 10px 5px 10px;
- 
 }
 .box5 {
   background: crimson;
-  padding: 5px 10px 5px 10px;
- 
 }
 .box6 {
   background: forestgreen;
@@ -254,10 +266,8 @@ nav {
   background: darkorchid;
 }
 
-
 .box8 {
   background: hotpink;
-  
 }
 .box9 {
   background: indigo;
@@ -266,7 +276,12 @@ nav {
   background: dodgerblue;
 }
 
-.coloredboxes {
+.box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+/* .coloredboxes {
   color: white;
   display:flex;
   justify-content:space-between;  
@@ -274,21 +289,9 @@ nav {
   flex-direction:row
   width:20%
   
-  }
-  /* display: flex;
+  } */
+/* display: flex;
   flex-direction: row; */
-}
-
-
-.middle-content .boxes .box {
-  background: black;
-  margin: 4% 0;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
 
 /*Bottom Section Styles*/
 .bottom-content {
@@ -303,11 +306,15 @@ nav {
 }
 
 .bottom-content .text-container {
-  width: 25%;
+  width: 28%;
 }
 
 .bottom-content .text-container:last-child {
   padding-right: 0;
+}
+
+.bottom {
+  padding-top: 0%;
 }
 
 /*Footer Styles*/
@@ -315,45 +322,135 @@ footer {
   width: 100%;
   background-color: #ff4b00;
 }
-
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
 /*About Page Styles*/
 
-.row {
-  display:flex;
-  flex-direction:row;
+.boxsection {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
-
-  
+  /* width: 1200px; */
 }
-
-.about{
-    /* display: flex;
+.linkz {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding: 2%;
+}
+.linkz a {
+  margin: 8px 2px;
+}
+.about {
+  /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between; */
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
-    
-
-    
+  margin-bottom: 4%;
+  border-bottom: 2px solid #ff4b00;
 }
 
-.box-element{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
-    text-align: justify; 
-      
+.box-element {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content:space-between */
+  margin-bottom: 4%;
+  border-bottom: 2px solid #ff4b00;
+  text-align: justify;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
 }
 
-.box-element img{
-    padding:5% 0;
-}
-
-.bottom{
-    /* margin :0 14% */
+.boxsection .box-element p {
+  padding-bottom: 5%;
 }
 
 /*Responsive Styles*/
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo {
+    width: 50%;
+  }
+  .links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .links a {
+    margin: 8px 2px;
+  }
+
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-content .text-container {
+    width: 100%;
+  }
+  .bottom-content .text-container {
+    width: 100%;
+  }
+
+  /*About page styles*/
+
+  nav .aboutnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .linkz {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .linkz a {
+    margin: 8px 2px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .boxsection {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+  }
+  .box-element {
+    width: 100%;
+  }
+
+  .boxsection .box-element {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
